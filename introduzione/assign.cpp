@@ -19,8 +19,27 @@ int main()
     ++a;
     cout << a << endl;
 
-    cout << a++ <<endl;
+    cout << a++ << endl;
 
-    cout << ++a <<endl;
+    cout << ++a << endl;
+
+    if (++a == a++)
+    {
+        cout << "++a == a++ esito positivo " << a << endl;
+    }
+    else
+    {
+        cout << "++a == a++ esito megativo " << a << endl;
+    }
+
+    if (a++ == ++a)
+    {
+        cout << "a++ == ++a esito positivo " << a << endl;
+    }
+    else
+    {
+        cout << "a++ == ++a esito negativo " << a << endl;
+    }
+
     return 0;
 }

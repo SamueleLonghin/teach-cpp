@@ -2,7 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
     "name": "C++",
-    "image": "mcr.microsoft.com/devcontainers/universal",
+    // "build": {
+    //     "dockerfile": "Dockerfile"
+    // },
+    "image":"mcr.microsoft.com/devcontainers/cpp:1-debian-11",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -18,7 +21,7 @@
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
     // "forwardPorts": [],
     // Use 'postCreateCommand' to run commands after the container is created.
-    "postCreateCommand": "gcc -v"
+    "postCreateCommand": "echo '\n\nBUONA PROGRAMMAZIONE BELLO!!!!\n\n'"
     // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
     // "remoteUser": "root"
 }
